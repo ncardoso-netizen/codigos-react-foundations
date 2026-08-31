@@ -3,12 +3,15 @@
   <body>
     <div id="app"></div>
     <script type="text/javascript">
-      // Seleciona o elemento div com id 'app'
       const app = document.getElementById('app');
 
       const header = document.createElement('h1');
-      header.innerText = 'Desenvolvimento Web com React e Next.js';
-      
+
+      const text = 'Develop. Preview. Ship.';
+      const headerContent = document.createTextNode(text);
+
+      header.appendChild(headerContent);
+
       app.appendChild(header);
     </script>
   </body>
